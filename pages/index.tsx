@@ -9,7 +9,10 @@ import Button from '../components/Shared/Button';
 import Coming from '../components/Shared/Coming';
 
 
+
 export default function Home() {
+    
+  
   return (
     <div>
       <Head>
@@ -23,14 +26,13 @@ export default function Home() {
                 <a className="block" href="/">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 bg-gray-100 rounded-full p-2" viewBox="0 0 87 80" fill="none"><path d="M56.7631 11.25L74.9497 42.75C77.0666 46.4167 74.4204 51 70.1865 51H33.8135C29.5796 51 26.9334 46.4167 29.0503 42.75L47.2369 11.25C49.3538 7.58333 54.6462 7.58333 56.7631 11.25Z" fill="#E14E4B" stroke="white" stroke-width="3"></path><path d="M39.7631 21.25L57.9497 52.75C60.0666 56.4167 57.4204 61 53.1865 61H16.8135C12.5796 61 9.93337 56.4167 12.0503 52.75L30.2369 21.25C32.3538 17.5833 37.6462 17.5833 39.7631 21.25Z" fill="#E14E4B" stroke="white" stroke-width="3"></path></svg>
                 </a>
-                {/* <nav  className="flex flex-grow">
+                <nav  className="flex flex-grow">
                     <ul className="flex flex-grow justify-end flex-wrap items-center"> 
                         <a  href="" className="text-sm	 text-gray-700 font-semibold ">Dashboard</a>
-                
                         <a className="text-sm	text-gray-100 font-semibold">Log in</a>
-                            <a className="ml-4 text-sm	 text-gray-100 font-semibold border-2 border-white px-6 py-2 transition-all rounded-lg hover:bg-white hover:text-dark">Register</a>
+                        <a className="ml-4 text-sm	 text-gray-100 font-semibold border-2 border-white px-6 py-2 transition-all rounded-lg hover:bg-white hover:text-dark">Register</a>
                     </ul>
-                </nav> */}
+                </nav>
             </div>
         </header>
         <div className="max-w-6xl px-5 mx-auto sm:px-6 block py-24 md:py-32">
@@ -43,19 +45,16 @@ export default function Home() {
                     <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tighter tracking-tight mb-5">The front-end resource tool.</h1>
                     <div className="max-w-lg">
                         <p className="md:text-md text-gray-300 mb-5">Discover new applications that make life easier for you as a designer or front-end developer. Manage and save your favourite applications too! 👋</p>
-                        
-                           <Link href="/discover">
-                          <div  className="hover:cursor-pointer max-w-xs btn md flex px-24 btn transition-shadow font-semibold py-2 rounded-lg  bg-rood hover:bg-hoveryellow  text-white items-center justify-center">
-                          Discover
-                          <SparklesIcon className="h-5 ml-1"/>
-                        </div>
+                        <Link href="/discover">
+                            <div  className="hover:cursor-pointer max-w-xs btn md flex px-24 btn transition-shadow font-semibold py-2 rounded-lg  bg-rood hover:bg-hoveryellow  text-white items-center justify-center">
+                                Discover
+                                <SparklesIcon className="h-5 ml-1"/>
+                            </div>
                         </Link>
-                       
                     </div>
                 </div>
                 <div className='h-72 w-96 relative hidden lg:block'>
                   <Image className='' layout="fill" objectFit="cover" src="/images/hero.png" alt=""/>
-
               </div>
             </div>
         </div>
@@ -84,7 +83,9 @@ export default function Home() {
                         </div>
                         <p className="mt-2 ml-0 sm:ml-12 mb-2 max-w-sm text-base leading-7 text-slate-700">Applications made for developers who want to store all their useful sites and discover new things.</p>
                     </div>
-                    <a className="text-base font-semibold text-indigo-600 hover:text-indigo-700" href="/components">Browse all tools <span aria-hidden="true">→</span></a>
+                    <Link href="/discover">
+                        <div className="text-base font-semibold text-indigo-600 hover:text-indigo-700">Browse all tools <span aria-hidden="true">→</span></div>
+                    </Link>
                 </div>
             </div>
         </div>
